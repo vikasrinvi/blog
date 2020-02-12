@@ -1,6 +1,6 @@
 <?php
 
-namespace Jenssegers\Agent;
+namespace Rinvi\Agent;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,13 +1,13 @@
 {
-    "name": "jenssegers/agent",
+    "name": "rinvi/agent",
     "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
     "keywords": ["laravel", "useragent", "agent", "user agent", "browser", "platform", "mobile", "desktop"],
-    "homepage": "https://github.com/jenssegers/agent",
+
     "license" : "MIT",
     "authors": [
         {
-            "name": "Jens Segers",
-            "homepage": "https://jenssegers.com"
+            "name": "Vikas Rinvi",
+            "homepage": "https://github.com/vikasrinvi"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jenssegers\\Agent\\": "src/"
+            "Rinvi\\Agent\\": "src/"
         }
     },
     "extra": {
@@ -30,10 +30,10 @@
         },
         "laravel": {
             "providers": [
-                "Jenssegers\\Agent\\AgentServiceProvider"
+                "Rinvi\\Agent\\AgentServiceProvider"
             ],
             "aliases": {
-                "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                "Agent": "Rinvi\\Agent\\Facades\\Agent"
             }
         }
     },

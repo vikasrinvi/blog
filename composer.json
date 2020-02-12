@@ -12,11 +12,19 @@
         "brick/phonenumber": "^0.2.2",
         "fideloper/proxy": "^4.0",
         "jadjoubran/laravel-angular": "^0.4.0",
-        
+        "rinvi/agent": "dev-master",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0"
     },
-
+    "repositories": [
+    {
+        "type": "path",
+        "url": "app/rinvi/agent",
+         "options": {
+                "symlink": true
+        }
+    }
+    ],
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
