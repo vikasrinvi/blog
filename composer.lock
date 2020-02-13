@@ -1740,7 +1740,7 @@
             "dist": {
                 "type": "path",
                 "url": "app/rinvi/agent/",
-                "reference": "92076c756826ff395a109140ef2a2ff894b24e05",
+                "reference": "94199a7382bae83a032104757c834c354eb8aba3",
                 "shasum": null
             },
             "require": {
@@ -1762,16 +1762,16 @@
                 },
                 "laravel": {
                     "providers": [
-                        "rinvi\\Agent\\AgentServiceProvider"
+                        "Rinvi\\Agent\\AgentServiceProvider"
                     ],
                     "aliases": {
-                        "Agent": "rinvi\\Agent\\Facades\\Agent"
+                        "Agent": "Rinvi\\Agent\\Facades\\Agent"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "rinvi\\Agent\\": "src/"
+                    "Rinvi\\Agent\\": "src/"
                 }
             },
             "license": [

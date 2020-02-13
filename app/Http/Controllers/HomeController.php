@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Rinvi\Agent\Agent;
+
+// use Rinvi\Agent\Facades\Agent;
 
 class HomeController extends Controller
 {
@@ -13,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-            $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -23,6 +25,21 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // use Jenssegers\Agent\Agent;
+
+        $agent = new Agent();
+
+        $agents = [
+
+            'device' => $agent->device(),
+            'platform' => $agent->platform(),
+            'browser' => $agent->browser(),
+            'isDesktop' => $agent->isDesktop(),
+            'isMobile' => $agent->isMobile(),
+            'isPhone' => $agent->isPhone(),
+            'isTablet' => $agent->isTablet(),
+        ];
+        dd($agents);
         return view('home');
     }
 }
